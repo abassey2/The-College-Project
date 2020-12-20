@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    View
+{% endblock %}
+
+{% block main %}
+<div style="text-align: center">
+    <form action="/vieworientation" method="post">
+        <h2>Want to search for specific stories within this category?</h2>
+        <input type="text" name="search" style="width: 500px" autocomplete="off" placeholder="type keywords here">
+        <input type="submit" value="Go">
+    </form>
+</div>
+<div>
+    {% for row in stories %}
+        {% for i in row %}
+            <br><b><h3>{{ i.name }}</h3></b>
+            <h3>{{ i.college }}</h3>
+            <p>{{ i.story }}</p>
+        {% endfor %}
+    {% endfor %}
+</div>
+{% endblock %}

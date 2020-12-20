@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    The College Project
+{% endblock %}
+
+{% block main %}
+    <!-- Make a hero homepage -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Welcome to The College Project</h1>
+            <h2>We are an organization currently putting together a book comprised of personal accounts of discrimination on college campuses across the country.
+            <br> Explore our website to learn more about us!</h2>
+            <button style="color: #ffffff" onclick="window.location.href='/share'">Share Your Story</button>
+        </div>
+    </section>
+    <div>
+        <br><h1>Our Vision</h1>
+        <p>"I would like to write a book telling individual stories of discrimination on college campus. Often times, people have an idea in their head that college is some special, magical place when in truth it is an extension of reality; being a college student does not make us immune to hate and discrimination. I believe this fantasy land that we enter in our head makes us more oblivious to the realities, therefore allowing us to fall prey more easily. I would like this book to allow people to share their stories, making it known to them that they are not alone, and they have a voice-one that deserves to be heard. I would like to offer people comfort in their stories. I want to know what resources they wish they had or what they wish happened during that time the discrimination or hatred took place.  The goal of this book is to make it known to people that they still have to be aware on college campuses, that it is not a dream land. Hopefully bringing awareness and sharing stories can help change some of the hatred that can occur on college campuses."<br><b>--Andie Weinberg, co-founder</b></p>
+        <br>
+    </div>
+    <form action="/" method="post">
+        <footer style="text-align: center">
+            <br><p>Want to receive updates on The College Project? Subscribe to our email list:<br>
+            <input autocomplete="off" name="name" placeholder="Name" type="text" style="width:170px; height:40px">
+            <input autocomplete="off" name="email" placeholder="Email" type="text" style="width:190px; height:40px"><br><button type="submit" style="height:39px; color:#ffffff">Subscribe</button></p>
+        </footer>
+    </form>
+{% endblock %}

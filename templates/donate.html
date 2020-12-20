@@ -1,0 +1,96 @@
+{% extends "layout.html" %}
+
+{% block head %}
+
+<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+<script src="/static/map.js"></script>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+</script>
+{% endblock %}
+
+{% block title %}
+    Donate
+{% endblock %}
+
+{% block main %}
+<div id=margin>
+    <h1>Explore Places to Donate</h1>
+    <div id="map"></div>
+    <div id="legend"><h3>Organization Type</h3></div>
+    <div id="information">
+        <h2><b>Racial Injustice</b>   <img src="/static/BLM.png"></h2>
+            <h3>The Steppingstone Foundation</h3>
+            <p>Founded in 1990, The Steppingstone Foundation is a not-for-profit organization that develops and implements programs that prepare underserved students for educational opportunities that lead to college success. Based on the premise that, regardless of circumstance, children can achieve at high levels with effective preparation and support, Steppingstone programs emphasize rigorous standards and achieve meaningful results.</p>
+            <ul>
+                <li>Located at One Appleton Street 4th Floor, Boston, MA 02116 USA</li>
+                <li>Contact for more information on donations: <a href="communications@tsf.org">communications@tsf.org</a></li>
+            </ul>
+            <h3>The Loveland Foundation</h3>
+            <p>The empowerment and liberation of communities of color, specifically black women and girls, through fellowships, residency programs, and more. Focus on Access, validation, and healing.</p>
+            <ul>
+                <li>Located at 320 7TH AVENUE #263 BROOKLYN, NY 11215</li>
+                <li>For donations and more information visit <a href="https://www.flipcause.com/secure/cause_pdetails/NzU4MzM=">https://www.flipcause.com/secure/cause_pdetails/NzU4MzM=</a></li>
+            </ul>
+            <h3>Black Lives Matter Boston</h3>
+            <p>Black Lives Matter Boston is committed to being active in the Movement for Black Lives (M4BL) and it’s broad mission platform. BLM Boston centers work against racist policing and police violence, abolishing mass incarceration, economic disparities  and factors that allow the school to prison pipeline to exist. Their mission is to organize and build Black power in Boston and across the country.</p>
+            <ul>
+                <li>Donate via PayPal on <a href="https://www.paypal.com/donate?token=dKQpj0WRHEgY2V5GF9a_xt6NaVxzlPPaXgvUar7WWZuWI6CntY11ISW6fSQrYD_nX-mC5Yx2ndP9L1R1">BLM Boston’s website</a></li>
+            </ul>
+            <h3>Families for Justice as Healing</h3>
+            <p>Boston based group led by incarcerated women, formerly incarcerated women, and women with incarcerated loved ones organizing the movement toward ending incarceration of women. Leading work to shift resources away from the criminal punishment system and into Black and Brown communities for housing, healthcare, education, economic development, and community-led organizations.</p>
+            <ul>
+                <li>Located at 100R Warren Street, Roxbury, MA 02119</li>
+                <li>Donate at <a href="http://justiceashealing.org/donate/">http://justiceashealing.org/donate/</a></li>
+            </ul>
+        <h2><b>Sex-based Discrimination</b>   <img src="/static/rainbow.png"></h2>
+            <h3>The Boston Alliance of Gay, Lesbian, Bisexual and Transgender Youth (BAGLY)</h3>
+            <p>A youth-led, adult-supported social support organization, committed to social justice and creating, sustaining, and advocating for programs, policies, and services for the LGBTQ+ youth community. </p>
+            <ul>
+                <li>Contact at (617) 227-4313 and <a href="info@bagly.org">info@bagly.org</a></li>
+                <li>Located at 28 Court Square, Boston, MA 02108</li>
+                <li>Donate at <a href="https://www.bagly.org/donate">https://www.bagly.org/donate</a></li>
+            </ul>
+            <h3>Fenway Health</h3>
+            <p>Fenway Health works to make life healthier for the people in the Fenway neighborhood, the LGBTQIA+ community, people living with HIV/AIDS and the broader population. Fenway Health was founded in 1971 as part of the free clinic movement by students who believed that “health care should be a right, not a privilege.”</p>
+            <ul>
+                <li>Located at 1340 Boylston Street, Boston, MA 02215</li>
+                <li>Contact at (617)-267-0900 and <a href="information@fenwayhealth.org">information@fenwayhealth.org</a></li>
+                <li>Donate at <a href="https://support.fenwayhealth.org/page/13397/donate/1">https://support.fenwayhealth.org/page/13397/donate/1</a></li>
+            </ul>
+            <h3>GLBTQ Legal Advocates & Defenders (GLAD)</h3>
+            <p>Through strategic litigation, public policy advocacy, and education, GLBTQ Legal Advocates & Defenders works in New England and nationally to create a just society free of discrimination based on gender identity and expression, HIV status, and sexual orientation.</p>
+            <ul>
+                <li>Located at 18 Tremont, Suite 950, Boston, MA 02108</li>
+                <li>Can be reached by phone: 617.426.1350, fax: 617.426.3594, or email: <a href="gladlaw@glad.org">gladlaw@glad.org</a></li>
+                <li>Donate at <a href="https://donate.glad.org/give/310951/#!/donation/checkout?c_src=2020EOYwebheader">https://donate.glad.org/give/310951/#!/donation/checkout?c_src=2020EOYwebheader</a></li>
+            </ul>
+        <h2><b>Sexual Assault</b>   <img src="/static/sex.png"></h2>
+            <h3>Boston Area Rape Crisis Center</h3>
+            <p>The only comprehensive rape crisis center in the Greater Boston area, and the oldest and largest center of its kind in New England. BARCC provides free, confidential support and services to survivors of sexual violence ages 12 and up and their families and friends.</p>
+            <ul>
+                <li>Located at 99 Bishop Allen Drive, Cambridge, MA 02139</li>
+                <li>Donat at <a href="https://www.classy.org/give/307309/#!/donation/checkout">https://www.classy.org/give/307309/#!/donation/checkout</a></li>
+            </ul>
+            <h3>EVA Center</h3>
+            <p>Since 2006, EVA Center has provided long-term comprehensive services for hundreds of women, while creating an undwerstanding and awareness of the socio-economic and situational factors that render women and girls vulnerable to the sex trade.</p>
+            <ul>
+                <li>Located at 989 Commonwealth Avenue, Boston, MA 02215</li>
+                <li>Contact at 617-779-2133 and <a href=" info@evacenter.org">info@evacenter.org</a></li>
+                <li>Donate at <a href="https://www.evacenter.org/donate">https://www.evacenter.org/donate</a></li>
+            </ul>
+            <h3>My Life My Choice</h3>
+            <p>Serves as a model for communities across the country set on changing not only lives, but the structural inequities that give rise to trafficking and sexual exploitation.</p>
+            <ul>
+                <li>Located at 988 Commonwealth Avenue, Boston, MA 02215</li>
+                <li>Donate at <a href="https://give.jri.org/campaign/my-life-my-choice-fy21-annual-appeal/c312101">https://give.jri.org/campaign/my-life-my-choice-fy21-annual-appeal/c312101</a></li>
+            </ul>
+            <h3>Urban League of Eastern Massachusetts</h3>
+            <p>The mission is to enable adults in Eastern MA to overcome racial, social barriers, economic inequities, sexual and domestic violence to employment and economic development opportunities.</p>
+            <ul>
+                <li>Located at 88 Warren Street, Roxbury, MA 02119</li>
+                <li>Donate at <a href="https://theulem.square.site/">https://theulem.square.site/</a></li>
+            </ul>
+    </div>
+</div>
+{% endblock %}

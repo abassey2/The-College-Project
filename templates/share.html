@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Share Your Story
+{% endblock %}
+
+{% block main %}
+   <!--Code adapted from W3schools.com : https://www.w3schools.com/howto/howto_css_contact_section.asp-->
+   <form action="/share" method="post">
+        <div class="container" style="text-align: center">
+            <div style="text-align:center">
+                <h2>Share Your Story</h2>
+                <p>If you have a story that you would like to share with The College Project team, we would love for you to share with us by filling out this form. We understand it is not easy to bring up memories like these, so we thank you for helping us on our mission.</p>
+                <p style="font-size: small">* indicates required field.</p>
+            </div>
+            <label for="name">Name</label>
+            <input type="text" name="name" placeholder="Your name..">
+            <br><label for="email">Email*</label>
+            <input type="text" name="email" placeholder="Your email address...">
+            <br><label for="college">School</label>
+            <input type="text" name="college" placeholder="Your school...">
+            <br><label for="type">Type of Discrimination*</label>
+            <select name="type" id="type">
+                <option value="select" selected>Select One</option>
+                <option value="racial">Based on Race</option>
+                <option value="orientation">Based on Sexual/Gender Orientation</option>
+                <option value="assault">Sexual Assault</option></select>
+            <br><label for="subject">Your Story*</label>
+            <textarea name="story" placeholder="Write something.." style="height:170px"></textarea>
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+{% endblock %}

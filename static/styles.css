@@ -1,0 +1,222 @@
+body, html
+{
+  height: 100%;
+  margin: 0;
+}
+
+body
+{
+  background-color: #f4e1d2;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  color: #484848;
+}
+
+.navbar
+{
+  text-align: right;
+  list-style-type: none;
+  margin: 0;
+  padding: 14px 16px;
+  background-color: #f18973;
+  color: #484848;
+}
+
+.navbar .bar
+{
+  display: inline-block;
+  padding: 0 18px 0 20px;
+  font-size: 16px;
+}
+
+.navbar .bar a
+{
+  text-decoration: none;
+  color: #484848;
+}
+
+.navbar .bar a:hover
+{
+  background-color: #bc5a45;
+}
+
+span
+{
+  padding: 0 18px 0 20px;
+}
+
+.title
+{
+    color: #484848;
+    font-size: 28px;
+    font-weight: bold;
+    float: left;
+    padding: 14px 16px;
+}
+
+.title a
+{
+    text-decoration: none;
+    list-style-type: none;
+    text-align: center;
+    color: #484848;
+}
+
+.hero
+{
+  /* Image size*/
+  height: 100%;
+  padding: 10px;
+  /* Flexbox */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Text */
+  text-align:center;
+  color: #484850;
+
+  /* Image positioning */
+  background-image: url(desk.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #f4e1d2;
+  position: relative;
+}
+
+.hero h1
+{
+  font-size: 5em;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  color: #484848;
+}
+
+.hero h2
+{
+  font-size: 2em;
+  color: #484848;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: #484848;
+  background-color: #bc5a45;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+button:hover {
+  background-color: #f18973;
+  color: #484848;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #bc5a45;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #f18973;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f4e1d2;
+  padding: 10px;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+.row-learn {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+.column-right {
+  float: right;
+  width: 50%;
+  margin-top: 6px;
+  padding: 15px;
+}
+
+#margin {
+  margin-left: -15%;
+  margin-right: -15%;
+}
+
+#map
+{
+    width: 100%;
+    height: 500px;
+    position: fixed;
+}
+
+#information
+{
+  min-height: 500px;
+  height: 100%;
+}
+
+#legend 
+{
+  font-family: Palatino, serif;
+  font-size: medium;
+  background: #fff;
+  line-height: 30px;
+  padding: 8px;
+  margin: 8px;
+  border: 3px solid #000;
+}
+
+#myCarousel
+{
+    height: 80%;
+    width: 80%;
+    margin-top: 2px;
+    margin-left: auto;
+    margin-right: auto;
+}
